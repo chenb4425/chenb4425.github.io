@@ -14,13 +14,10 @@
     nav a {
         margin: 0 10px;
     }
-}
-
-h2 {
-    margin-top: 1em;
-    padding-top: 1em;
-    font-size: 23px;
-
+    .profile-pic {
+        float: none;
+        margin: 10px 0;   /* center flow on narrow screens */
+    }
 }
 
 nav a {
@@ -51,8 +48,9 @@ body {
         "ct ct"
 }
 
-h1, h2, strong {
-    color:black;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 header {
@@ -75,9 +73,9 @@ nav {
     align-self: end;
 }
 h1 {
+    color:black;
     font-size: 35px;
     margin-bottom: 0.1em;
-
 }
 a {
     color: #67008c;
@@ -87,22 +85,23 @@ ul {
     padding-left: 20px;       /* keep indentation */
     margin-bottom: 0px;
 }
-
 p {
     margin-bottom: 0.5em;     /* reduce default bottom margin */
     margin-top: 0.5em;
 }
 
 .profile-pic {
-    width: 400px;
-    float: right;
+    width: 100%;        /* fill container width */
+    max-width: 400px;   /* but never exceed 400px */
+    height: auto;       /* maintain aspect ratio */
+    display: block;     /* remove inline gap */
+    float: right;       /* keep layout on wide screens */
     margin: 0 0 10px 20px;
-        box-shadow: 1px 4px 8px gray;
-
+    box-shadow: 1px 4px 8px gray;
 }
 
 .reading-books {
-    height: 350px;
+    max-height: 350px;
     margin: 20px 20px 20px 20px;
     box-shadow: 1px 4px 8px gray;
 }
