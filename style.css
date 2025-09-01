@@ -89,6 +89,16 @@ p {
     margin-bottom: 0.5em;     /* reduce default bottom margin */
     margin-top: 0.5em;
 }
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: rgb(120, 120, 120);
+}
 
 .profile-pic {
     width: 100%;        /* fill container width */
